@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRX Creations - Catálogo</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        /* Hero section */
+        .hero {
+            background-image: url('https://prxcreations.com/wp-content/uploads/2023/03/catalogo-prx.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Catalog section */
+        .catalog {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .catalog-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .catalog-intro p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .product-info p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: #000;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://prxcreations.com/wp-content/uploads/2023/03/logo-prx.png" alt="PRX Creations Logo" class="logo">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Catálogo PRX</h1>
+            <p>Descubre nuestra colección exclusiva de productos</p>
+        </div>
+    </section>
+    
+    <section class="catalog">
+        <div class="catalog-intro">
+            <h2>Nuestros Productos</h2>
+            <p>Explora nuestra amplia gama de productos de alta calidad diseñados para satisfacer tus necesidades. Cada artículo en nuestro catálogo ha sido cuidadosamente seleccionado para ofrecerte lo mejor en diseño y funcionalidad.</p>
+        </div>
+        
+        <div class="catalog-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto1.jpg" alt="Producto 1">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 1</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$99.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto2.jpg" alt="Producto 2">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 2</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$129.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto3.jpg" alt="Producto 3">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 3</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$79.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto4.jpg" alt="Producto 4">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 4</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$149.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto5.jpg" alt="Producto 5">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 5</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$89.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://prxcreations.com/wp-content/uploads/2023/03/producto6.jpg" alt="Producto 6">
+                </div>
+                <div class="product-info">
+                    <h3>Producto Destacado 6</h3>
+                    <p>Descripción breve del producto y sus características principales.</p>
+                    <p class="product-price">$119.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PRX Creations</h3>
+                <p>Innovación y diseño en cada producto que creamos.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: info@prxcreations.com</li>
+                    <li>Teléfono: +1 234 567 890</li>
+                    <li>Dirección: Ciudad, País</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 PRX Creations. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

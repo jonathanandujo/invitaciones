@@ -1,0 +1,62 @@
+{
+  "events": [
+    {
+      "id": "catalogo",
+      "backgroundColor": "#ffffff",
+      "title": "Nuestra Boda",
+      "adultsOnly": true,
+      "people": {
+        "person1": "Ale",
+        "person2": "Martin",
+        "person1Parent1": "pm",
+        "person1Parent2": "mm",
+        "person2Parent1": "pa",
+        "person2Parent2": "ma",
+        "confirmation": {
+          "person1": "526142171150",
+          "person2": "526142171150",
+          "color1" : "#789456",
+          "color2" : "#f85900",
+          "text": "Confirmo que voy, alv"
+        }
+      },
+      "date": "2026-05-10T14:30:00",
+      "countdownTemplateId": 1,
+      "song": {
+        "source": "kevin-san-lucas",
+        "image": null,
+        "name": "Kevin Kaa"
+      },
+      "eventText": {
+        "title1": "",
+        "text1": "",
+        "title2": "",
+        "text2": "",
+        "text3": ""
+      },
+      "program": {
+        "church": {
+          "title": "Ceremonia Religiosa",
+          "name": "Parroquia de san Malaquias",
+          "address": "Avenida del chipiturco #666",
+          "time": "18 hrs"
+        },
+        "eventSalon": {
+          "title": "Recepcion",
+          "name": "Salon de eventos el chapulin",
+          "address": "calle 9 #357",
+          "time": "20 hrs"
+        },
+        "dinner": {
+          "title": "Recepcion",
+          "name": "Salon de eventos el chapulin",
+          "time": "21 hrs"
+        }
+      },
+      "dressCode":{
+        "title": "Formal",
+        "description": null
+      }
+    }
+  ]
+}
