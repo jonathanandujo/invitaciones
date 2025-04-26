@@ -1,45 +1,60 @@
-.App {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  background-color: rgb(221, 255, 221);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  color: white;
-  width: auto; /* Adjust width as needed */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the start (left) */
+pre{
+  text-align: left;
+  color: red;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
+.invitation-container {
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
-nav ul li {
-  width: 100%;
+h1 {
+  /* font-size: 2.5rem; */
+  color: #8b5a2b;
+  /* margin-bottom: 20px; */
+  /* font-weight: 700; */
 }
 
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: background-color 0.3s;
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
-nav ul li a:hover {
-  background-color: #61dafb;
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d4a76a, transparent);
+  margin: 30px auto;
+  width: 80%;
 }
 
-nav ul li a.active {
-  background-color: #61dafb;
+h2 {
+  font-size: 1.8rem;
+  color: #8b5a2b;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-main {
-  flex: 1;
+.invitation-text {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+
+.chida 
+{
+  color: blue !important;
 }

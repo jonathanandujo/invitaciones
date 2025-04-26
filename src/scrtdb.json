@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "id": "catalogo",
-      "backgroundColor": "#ffffff",
+      "id": "demo",
+      "backgroundColor": "#ffaaaa",
       "title": "Nuestra Boda",
       "adultsOnly": true,
       "people": {
-        "person1": "Ale",
+        "person1": "Alets",
         "person2": "Martin",
         "person1Parent1": "pm",
         "person1Parent2": "mm",
@@ -27,12 +27,12 @@
         "image": null,
         "name": "Kevin Kaa"
       },
-      "eventText": {
-        "title1": "",
-        "text1": "",
-        "title2": "",
-        "text2": "",
-        "text3": ""
+      "weddingText": {
+        "title1": "Nos Casamos",
+        "text1": "Con gratitud en nuestros corazones, agradecemos a Dios por el regalo de habernos encontrado.",
+        "text2": "Hoy, llenos de un amor profundo y sincero, tomamos la decisión de unir nuestras vidas en matrimonio.",
+        "title2": "¡Acompañanos!",
+        "text3": "¡Les extendemos una cordial invitación para celebrar con nosotros la alegría de unirnos en matrimonio!"
       },
       "program": {
         "church": {

@@ -1,9 +1,11 @@
+import './App.css';
 import { useState, useEffect } from "react";
 import eventData from './scrtdb.json'; // Import JSON directly
 import Countdown from './components/countdown';
 import AudioPlayer from './components/audioPlayer';
 import Confirmation from './components/confirmation';
-// import EventText from './components/eventText';
+import EventText from './components/eventText';
+import Main from './components/main';
 
 function App() {
   const [event, setEvent] = useState(null);
@@ -27,18 +29,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex-grid">
-        <div className="grid-item">
+      {/* <div className="flex-grid">
+        <div className="grid-item"> */}
+          <Main content={event} />
           <h1>Hi, welcome to the event {event.id}</h1>
           <h2>Song: {event.song.name}</h2>
           <AudioPlayer song={event.song} />
-          {JSON.stringify(event)}
           <Countdown weddingDate={event.date} countdownTemplateId={event.countdownTemplateId} />
-          {/* <EventText confirmation={event.eventText} /> */}
+          <EventText content={event.weddingText} />
           <Confirmation confirmation={event.people} />
+          <hr />
+          <pre>
+          {JSON.stringify(event, null, 4)}
+          </pre>
         </div>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   );
 }
 
