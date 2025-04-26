@@ -27,24 +27,37 @@ function App() {
     return <h1>Event {id} not found.</h1>;
   }
 
+  /* Componentes
+  Nombres - persona 1 persona 2
+  Player - canción, nuestra canción
+  Counter - fecha
+  Fotos - principal, album
+  mapa - url / iglesia - recepción
+  Confirmación - 
+  Texto html - invitacion
+  texto padres / slider
+  texto 2 html
+  Programa - itinerario
+  Codigo vestimenta - opcional
+  Reservado para adultos - opcional
+  Niños bienvenidos
+  Album -
+  Hashtag - opcional
+  Confirmación - whatsapp link - ja
+   */
+
   return (
     <div className="App">
-      {/* <div className="flex-grid">
-        <div className="grid-item"> */}
-          <Main content={event} />
-          <h1>Hi, welcome to the event {event.id}</h1>
-          <h2>Song: {event.song.name}</h2>
-          <AudioPlayer song={event.song} />
-          <Countdown weddingDate={event.date} countdownTemplateId={event.countdownTemplateId} />
-          <EventText content={event.weddingText} />
-          <Confirmation confirmation={event.people} />
-          <hr />
-          <pre>
-          {JSON.stringify(event, null, 4)}
-          </pre>
-        </div>
-    //   </div>
-    // </div>
+      <Main content={event} />
+      <AudioPlayer song={event.song} />
+      <Countdown weddingDate={event.date} countdownTemplateId={event.countdownTemplateId} />
+      <EventText content={event.weddingText} />
+      <Confirmation confirmation={event.people} />
+      <hr />
+      <pre>
+        {JSON.stringify(event, null, 4)}
+      </pre>
+    </div>
   );
 }
 

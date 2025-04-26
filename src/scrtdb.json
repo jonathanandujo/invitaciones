@@ -17,7 +17,10 @@
           "person2": "526142171150",
           "color1" : "#789456",
           "color2" : "#f85900",
-          "text": "Confirmo que voy, alv"
+          "title": "Confirmación",
+          "text1": "¡Envianos un mensaje de texto por WhatsApp confirmandonos tu asistencia!",
+          "text2": "¡Te agradecemos tu confirmación!",
+          "editable":true
         }
       },
       "date": "2026-05-10T14:30:00",

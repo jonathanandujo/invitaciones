@@ -1,5 +1,6 @@
 function EventText({ content }) {
-  
+  if (!content)
+    return <></>;
   return (
       <div className="invitation-container">
       <h1>{content.title1}</h1>

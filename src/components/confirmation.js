@@ -3,10 +3,8 @@ function Confirmation({ confirmation }) {
   
     return (
       <div style={{ textAlign: "center", fontFamily: "Arial, sans-serif", padding: "20px" }}>
-        <h2 style={{ color: "#2c3e50" }}>Esta es la confirmacion</h2>
-        <h3 style={{ background: "#f4f4f4", padding: "10px", borderRadius: "5px" }}>
-          {confDetails.text}
-        </h3>
+        <h1>{confDetails.title}</h1>
+        {confDetails.text1}
         <div style={{ marginTop: "20px" }}>
           <button
             style={{
@@ -36,6 +34,7 @@ function Confirmation({ confirmation }) {
             {person2}
           </button>
         </div>
+        <h3>{confDetails.text2}</h3>
       </div>
     );
   }

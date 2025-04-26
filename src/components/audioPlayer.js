@@ -44,6 +44,9 @@ const AudioPlayer = ({ song }) => {
     }
   }, [hasInteracted]);
 
+  if(!song)
+    return <></>;
+
   return (
     <div>
       <h4>Now Playing: {song.name}</h4>
