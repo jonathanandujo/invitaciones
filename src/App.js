@@ -28,19 +28,21 @@ function App() {
   }
 
   /* Componentes
-  Nombres - persona 1 persona 2
-  Player - canción, nuestra canción
-  Counter - fecha
+  main - Nombres - persona 1 persona 2 --ja
+  Player - canción, nuestra canción -- ja
+  Counter - fecha -- ja
+
   Fotos - principal, album
   mapa - url / iglesia - recepción
-  Confirmación - 
-  Texto html - invitacion
+  
+  Texto html - invitacion --ms
   texto padres / slider
   texto 2 html
-  Programa - itinerario
+
+  Programa - itinerario --ms
   Codigo vestimenta - opcional
   Reservado para adultos - opcional
-  Niños bienvenidos
+  Niños bienvenidos /etiqueta sencillo
   Album -
   Hashtag - opcional
   Confirmación - whatsapp link - ja
